@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://careerly.vercel.app/sitemap.xml
+
+# Disallow admin and API routes
+User-agent: *
+Disallow: /api/
+Disallow: /admin/

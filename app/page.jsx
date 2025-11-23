@@ -13,43 +13,70 @@ import {
   Target,
   Sparkles,
   CheckCircle2,
-} from "lucide-react";import Image from "next/image";
+} from "lucide-react"; import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Home",
+  description: "Accelerate your career with AI-powered tools. Get personalized resume optimization, cover letter generation, interview preparation, and industry insights tailored to your professional journey.",
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CareerLy",
+  "description": "AI-Powered Career Growth Platform",
+  "url": "https://careerly.vercel.app",
+  "logo": "https://careerly.vercel.app/logo.png",
+  "sameAs": [
+    "https://twitter.com/careerly",
+    "https://linkedin.com/company/careerly"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "support@careerly.com"
+  }
+};
 
 export default function Home() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <div className="grid-background"></div>
-        
-        <HeroSection />
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-4 md:px-6">
+      <HeroSection />
+
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
-              Powerful Features for Your Career Growth
+            Powerful Features for Your Career Growth
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {features.map((feature,index)=>{
-              return(
-                <Card key={index}className="border-2 hover:border-primary transition-colors duration-300">
+            {features.map((feature, index) => {
+              return (
+                <Card key={index} className="border-2 hover:border-primary transition-colors duration-300">
                   <CardContent className="pt-6 text-center flex flex-col items-center">
                     <div className="flex flex-col items-center justify-center">
-                    {feature.icon}
-                    <h3 className="text-xl font-bold mb-2">
-                      {feature.title}</h3>
-                    <p className="text-muted-foreground">
-                      {feature.description}
-                    </p>
-                  </div>
+                      {feature.icon}
+                      <h3 className="text-xl font-bold mb-2">
+                        {feature.title}</h3>
+                      <p className="text-muted-foreground">
+                        {feature.description}
+                      </p>
+                    </div>
                   </CardContent>
                 </Card>
               );
             })}
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Stats Section */}
+      {/* Stats Section */}
       <section className="w-full py-12 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto text-center">
