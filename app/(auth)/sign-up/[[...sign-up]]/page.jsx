@@ -3,15 +3,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <SignUp
-      appearance={{
-        elements: {
-          optionalFieldLabel: {
-            display: "none"   // Hide the "Optional" text
-          }
-        }
-      }}
-    />
+    <SignUp/>
   )
 }
 
