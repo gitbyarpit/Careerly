@@ -160,7 +160,7 @@ const OnboardingForm = ({industries}) => {
                 <Label htmlFor="skills">Skills</Label>
                  <Input
                 id="skills"
-                
+                placeholder="Enter your skills..."
                 {...register("skills")}
               />
              <p className="text-sm text-muted-foreground">
