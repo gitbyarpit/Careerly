@@ -164,7 +164,7 @@ const DashboardView = ({insights}) => {
                           <p className="font-medium">{label}</p>
                           {payload.map((item) => (
                             <p key={item.name} className="text-sm">
-                              {item.name}: ${item.value}K
+                              {item.name}: ₹{item.value}K
                             </p>
                           ))}
                         </div>
