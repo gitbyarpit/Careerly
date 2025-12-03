@@ -43,98 +43,106 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* ============================================================
+   EMERALD THEME (LIGHT MODE)
+   Primary: #10b981
+   ============================================================ */
 :root {
   --radius: 0.625rem;
 
-  /* ---------------- BLUE THEME (Light) ---------------- */
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #f6fef9;
+  --foreground: #064e3b;
 
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #064e3b;
 
   --popover: #ffffff;
-  --popover-foreground: #0f172a;
+  --popover-foreground: #064e3b;
 
-  --primary: #3b82f6;
+  --primary: #10b981;
   --primary-foreground: #ffffff;
 
-  --secondary: #e2e8f0;
-  --secondary-foreground: #0f172a;
+  --secondary: #e6f7ef;
+  --secondary-foreground: #064e3b;
 
-  --muted: #e2e8f0;
-  --muted-foreground: #475569;
+  --muted: #e6f7ef;
+  --muted-foreground: #0f766e;
 
-  --accent: #e2e8f0;
-  --accent-foreground: #0f172a;
+  --accent: #e6f7ef;
+  --accent-foreground: #064e3b;
 
   --destructive: #ef4444;
 
-  --border: #cbd5e1;
-  --input: #cbd5e1;
-  --ring: #60a5fa;
+  --border: #bbf7d0;
+  --input: #bbf7d0;
+  --ring: #6ee7b7;
 
-  --chart-1: #3b82f6;
-  --chart-2: #38bdf8;
-  --chart-3: #6366f1;
-  --chart-4: #0ea5e9;
-  --chart-5: #7dd3fc;
+  --chart-1: #10b981;
+  --chart-2: #34d399;
+  --chart-3: #059669;
+  --chart-4: #a7f3d0;
+  --chart-5: #6ee7b7;
 
-  --sidebar: #f1f5f9;
-  --sidebar-foreground: #0f172a;
-  --sidebar-primary: #3b82f6;
+  --sidebar: #ecfdf5;
+  --sidebar-foreground: #064e3b;
+  --sidebar-primary: #10b981;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e2e8f0;
-  --sidebar-accent-foreground: #0f172a;
-  --sidebar-border: #cbd5e1;
-  --sidebar-ring: #60a5fa;
+  --sidebar-accent: #d1fae5;
+  --sidebar-accent-foreground: #064e3b;
+  --sidebar-border: #a7f3d0;
+  --sidebar-ring: #6ee7b7;
 }
 
+/* ============================================================
+   EMERALD THEME (DARK MODE)
+   ============================================================ */
 .dark {
-  /* ---------------- BLUE THEME (Dark) ---------------- */
-  --background: #0f172a;
-  --foreground: #f8fafc;
+  --background: #022c22;
+  --foreground: #ecfdf5;
 
-  --card: #1e293b;
-  --card-foreground: #f8fafc;
+  --card: #064e3b;
+  --card-foreground: #ecfdf5;
 
-  --popover: #1e293b;
-  --popover-foreground: #f8fafc;
+  --popover: #064e3b;
+  --popover-foreground: #ecfdf5;
 
-  --primary: #60a5fa;
-  --primary-foreground: #0f172a;
+  --primary: #34d399;
+  --primary-foreground: #022c22;
 
-  --secondary: #334155;
-  --secondary-foreground: #f8fafc;
+  --secondary: #065f46;
+  --secondary-foreground: #ecfdf5;
 
-  --muted: #334155;
-  --muted-foreground: #94a3b8;
+  --muted: #065f46;
+  --muted-foreground: #bbf7d0;
 
-  --accent: #334155;
-  --accent-foreground: #f8fafc;
+  --accent: #065f46;
+  --accent-foreground: #ecfdf5;
 
   --destructive: #f87171;
 
-  --border: #475569;
-  --input: #475569;
-  --ring: #93c5fd;
+  --border: #0d9488;
+  --input: #0d9488;
+  --ring: #6ee7b7;
 
-  --chart-1: #60a5fa;
-  --chart-2: #38bdf8;
-  --chart-3: #818cf8;
-  --chart-4: #0ea5e9;
-  --chart-5: #7dd3fc;
+  --chart-1: #34d399;
+  --chart-2: #10b981;
+  --chart-3: #6ee7b7;
+  --chart-4: #a7f3d0;
+  --chart-5: #bbf7d0;
 
-  --sidebar: #1e293b;
-  --sidebar-foreground: #f8fafc;
-  --sidebar-primary: #60a5fa;
-  --sidebar-primary-foreground: #0f172a;
-  --sidebar-accent: #334155;
-  --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: #475569;
-  --sidebar-ring: #93c5fd;
+  --sidebar: #064e3b;
+  --sidebar-foreground: #ecfdf5;
+  --sidebar-primary: #34d399;
+  --sidebar-primary-foreground: #022c22;
+  --sidebar-accent: #065f46;
+  --sidebar-accent-foreground: #ecfdf5;
+  --sidebar-border: #0d9488;
+  --sidebar-ring: #6ee7b7;
 }
 
+/* ============================================================
+   BASE + BACKGROUND EFFECT (UNCHANGED)
+   ============================================================ */
 @layer base {
   * {
     @apply border-border;
@@ -144,7 +152,6 @@
   }
 }
 
-/* --------- Background Grid (your previous code kept intact) --------- */
 .grid-background {
   position: fixed;
   top: 0;
