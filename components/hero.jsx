@@ -37,7 +37,7 @@ const HeroSection = () => {
                           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
 
                     Advance your career with personalized guidance, interview prep, and
-                    AI-powered tools for job success.
+                    AI-powered tools for your job success.
                 </p>
             </div>
 
